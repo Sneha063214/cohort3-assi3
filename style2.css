@@ -1,0 +1,173 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  color:white;
+}
+
+html,body{
+  height:100%;
+  width:100%;
+  background-color:rgb(111, 95, 95);
+}
+/* uhalf */
+.uhalf {
+  /* background-image: url(./images/shinsei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  height:60%;
+  width:100%;
+  overflow: hidden;
+  object-fit:contain;
+  position: relative;
+
+}
+.big-img{
+  height: 100%;
+  width: 100%;
+  /* border-radius: 0  0 30% 30% ; */
+  border-bottom-left-radius: 50% 40%; border-bottom-right-radius: 50% 40%;
+ 
+  overflow: hidden;
+}
+.big-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    
+}
+
+
+/* nav */
+nav{
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    z-index: 2;
+}
+.middle{
+  display: flex;
+  justify-content: space-evenly;
+  gap:30px;
+}
+
+.end{
+   display: flex;
+  
+  gap:10px;
+}
+.logo img{
+  height:200px;
+  width: 200px;
+}
+.box{
+    height:30px;
+    width:30px;
+    background-color: white;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+    
+}
+.box i{
+    color:black;
+   
+}
+main{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding:10px;
+}
+
+hr{
+  width:40%;
+}
+.timeline{
+    width: 40%;
+    margin: 50px auto;
+    position: relative;
+    border-top: 2px solid #8f8b91;
+}
+
+.left-dot,
+.right-dot{
+    width: 10px;
+    height: 10px;
+    background: #f6c98d;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -6px;
+}
+
+.left-dot{
+    left: 0;
+}
+
+.right-dot{
+    right: 0;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    transform: translateX(-50%);
+}
+
+.diamond{
+    width: 16px;
+    height: 16px;
+    background: #f6c98d;
+    transform: rotate(45deg);
+    display: block;
+    border: 2px solid #5a4d4d;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  width: 50%;
+  
+}
+
+.middle h3{
+    position: relative;
+    padding: 10px 16px;
+     overflow: hidden;
+    /* z-index: 1; */ 
+    /* cursor: pointer; */
+}
+
+.middle h3::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 160, 66, 0.3);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.middle h3:hover::before{
+    top: 0;
+}
